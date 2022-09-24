@@ -1,3 +1,5 @@
+import 'data_state.dart';
+
 abstract class UseCaseWithParams<Type, Params> {
-  Future<Type> execute(Params params);
+  Future<DataState<Type>> execute(Params params);
 }

@@ -6,15 +6,9 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:base_clean_architecture/core/utils/util.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  MaterialApp app = const MaterialApp(
-    supportedLocales: [
-      Locale('vi'),
-    ],
-  );
   test("Test String extension", () {
     const vnString = 'Loại bỏ tiếng việt ra khỏi câu';
     final containDiacritics = vnString.containDiacritics;

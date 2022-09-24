@@ -21,6 +21,7 @@ class Urllauncher {
     final Uri? uri = Uri.tryParse(url.trim());
     if (uri != null && await canLaunchUrl(uri)) {
       final result = await launchUrl(uri, mode: LaunchMode.externalApplication);
+
       return result;
     }
     if (fallbackUrl != null) {
